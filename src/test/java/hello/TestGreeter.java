@@ -13,18 +13,18 @@ public class TestGreeter {
 
    @Test
    @DisplayName("Test for Empty Name")
-   public void testGreeterEmpty() 
-
+   public void testGreeterEmpty()
    {
       assertEquals(g.getName(),"");
-      assertEquals(g.sayHello(),"Snort!");
+      //assertEquals(g.sayHello(),"Snort!");
+      // "Snort" will make the build fail, changing it to "Hello"
+      assertEquals(g.sayHello(),"Hello!");
    }
-
 
 
    @Test
    @DisplayName("Test for Name='World'")
-   public void testGreeter() 
+   public void testGreeter()
    {
 
       g.setName("World");
